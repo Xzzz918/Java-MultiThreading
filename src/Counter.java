@@ -5,6 +5,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 /**
  * @author gemini
  * Created in  2021/4/10 14:28
+ * Java并发编程的艺术Page 18
  * 使用循环CAS实现原子操作
  * 以下代码实现了基于CAS线程安全的计数器方法safeCount
  * 和一个非线程安全的计数器count
