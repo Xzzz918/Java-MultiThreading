@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="00fdd452-418a-45c5-89e5-9a9165b380dd" name="默认变更列表" comment="该代码实现了基于CAS线程安全的计数器方法">
+    <list default="true" id="00fdd452-418a-45c5-89e5-9a9165b380dd" name="默认变更列表" comment="引起死锁的示例代码">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -9,11 +9,34 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Gemini" />
+      </list>
+    </option>
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="1qy8i25mq21XRevr1c2eyonOIVk" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -24,28 +47,55 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../EffectiveJava" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\JavaMultiThread\src" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+  <component name="RunManager" selected="应用程序.FinalReferenceEscapeExample">
+    <configuration name="DeadLockDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DeadLockDemo" />
+      <module name="JavaMultiThread" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FinalExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FinalExample" />
+      <module name="JavaMultiThread" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FinalReferenceEscapeExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FinalReferenceEscapeExample" />
+      <module name="JavaMultiThread" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReorderExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ReorderExample" />
+      <module name="JavaMultiThread" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.FinalReferenceEscapeExample" />
+        <item itemvalue="应用程序.FinalExample" />
+        <item itemvalue="应用程序.ReorderExample" />
+        <item itemvalue="应用程序.DeadLockDemo" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -59,6 +109,13 @@
       <workItem from="1618040722111" duration="851000" />
       <workItem from="1618042915912" duration="54000" />
       <workItem from="1618056221722" duration="278000" />
+      <workItem from="1618057210232" duration="483000" />
+      <workItem from="1618058024170" duration="1554000" />
+      <workItem from="1618069133007" duration="13000" />
+      <workItem from="1618153268050" duration="877000" />
+      <workItem from="1618227584402" duration="2584000" />
+      <workItem from="1618230844880" duration="3010000" />
+      <workItem from="1618241178290" duration="196000" />
     </task>
     <task id="LOCAL-00001" summary="该代码实现了基于CAS线程安全的计数器方法">
       <created>1618056322847</created>
@@ -67,7 +124,42 @@
       <option name="project" value="LOCAL" />
       <updated>1618056322847</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="该代码实现了基于CAS线程安全的计数器方法">
+      <created>1618057279281</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1618057279281</updated>
+    </task>
+    <task id="LOCAL-00003" summary="引起死锁的示例代码">
+      <created>1618059525835</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1618059525835</updated>
+    </task>
+    <task id="LOCAL-00004" summary="重排序对多线程的影响">
+      <created>1618154052116</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1618154052116</updated>
+    </task>
+    <task id="LOCAL-00005" summary="锁内存语义的实现">
+      <created>1618229721337</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1618229721337</updated>
+    </task>
+    <task id="LOCAL-00006" summary="2021年4月12日晚更新">
+      <created>1618233424140</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1618233424140</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -87,6 +179,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="该代码实现了基于CAS线程安全的计数器方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="该代码实现了基于CAS线程安全的计数器方法" />
+    <MESSAGE value="重排序对多线程的影响" />
+    <MESSAGE value="锁内存语义的实现" />
+    <MESSAGE value="2021年4月12日晚更新" />
+    <MESSAGE value="引起死锁的示例代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="引起死锁的示例代码" />
   </component>
 </project>
