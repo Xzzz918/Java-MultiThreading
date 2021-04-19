@@ -5,15 +5,7 @@ import java.util.concurrent.TimeUnit;
  * Created in  2021/4/16 19:24
  * Java并发编程的艺术Page 87
  */
-class SleepUtils{
-    public static final void second(long seconds){
-        try {
-            TimeUnit.SECONDS.sleep(seconds);
-        }catch (InterruptedException e){
-            e.printStackTrace();
-        }
-    }
-}
+
 public class ThreadState {
     public static void main(String[] args) {
         new Thread(new TimeWaiting(), "TimeWaitingThread").start();
