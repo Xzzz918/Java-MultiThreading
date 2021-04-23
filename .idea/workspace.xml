@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="00fdd452-418a-45c5-89e5-9a9165b380dd" name="默认变更列表" comment="引起死锁的示例代码">
+    <list default="true" id="00fdd452-418a-45c5-89e5-9a9165b380dd" name="默认变更列表" comment="Daemon线程">
+      <change afterPath="$PROJECT_DIR$/Class04/等待通知机制与Condition接口.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Condition/BoundedQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Condition/ConditionUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/WaitNotifyMac/SleepUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/WaitNotifyMac/WaitNotify.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaMultiThread/FinalReferenceEscapeExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaMultiThread/FinalReferenceEscapeExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WaitNotify.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +42,7 @@
   </component>
   <component name="ProjectId" id="1qy8i25mq21XRevr1c2eyonOIVk" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="1" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -43,57 +50,92 @@
     <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../EffectiveJava" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Confirmation" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\JavaMultiThread\src" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="WaitNotifyMac" />
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.FinalReferenceEscapeExample">
-    <configuration name="DeadLockDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DeadLockDemo" />
+  <component name="RunManager" selected="应用程序.WaitNotify (1)">
+    <configuration name="ConnectionPoolTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ThreadApplication.ConnectionPoolTest" />
+      <module name="JavaMultiThread" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ThreadApplication.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Join" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Join" />
       <module name="JavaMultiThread" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FinalExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="FinalExample" />
+    <configuration name="Piped" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Piped" />
       <module name="JavaMultiThread" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FinalReferenceEscapeExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="FinalReferenceEscapeExample" />
+    <configuration name="Profiler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Profiler" />
       <module name="JavaMultiThread" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReorderExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ReorderExample" />
+    <configuration name="WaitNotify (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="WaitNotifyMac.WaitNotify" />
       <module name="JavaMultiThread" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="WaitNotifyMac.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.FinalReferenceEscapeExample" />
-        <item itemvalue="应用程序.FinalExample" />
-        <item itemvalue="应用程序.ReorderExample" />
-        <item itemvalue="应用程序.DeadLockDemo" />
+        <item itemvalue="应用程序.WaitNotify (1)" />
+        <item itemvalue="应用程序.ConnectionPoolTest" />
+        <item itemvalue="应用程序.Profiler" />
+        <item itemvalue="应用程序.Join" />
+        <item itemvalue="应用程序.Piped" />
       </list>
     </recent_temporary>
   </component>
@@ -116,6 +158,16 @@
       <workItem from="1618227584402" duration="2584000" />
       <workItem from="1618230844880" duration="3010000" />
       <workItem from="1618241178290" duration="196000" />
+      <workItem from="1618572236186" duration="6512000" />
+      <workItem from="1618814154216" duration="135000" />
+      <workItem from="1618832576489" duration="4564000" />
+      <workItem from="1618837956205" duration="9000" />
+      <workItem from="1618992291405" duration="4800000" />
+      <workItem from="1619006098863" duration="1698000" />
+      <workItem from="1619008466693" duration="2718000" />
+      <workItem from="1619011960373" duration="622000" />
+      <workItem from="1619161373291" duration="3706000" />
+      <workItem from="1619176785651" duration="97000" />
     </task>
     <task id="LOCAL-00001" summary="该代码实现了基于CAS线程安全的计数器方法">
       <created>1618056322847</created>
@@ -159,7 +211,63 @@
       <option name="project" value="LOCAL" />
       <updated>1618233424140</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Java线程状态">
+      <created>1618573620696</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1618573620696</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Daemon线程">
+      <created>1618575739384</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1618575739384</updated>
+    </task>
+    <task id="LOCAL-00009" summary="更新了代码">
+      <created>1618814278685</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1618814278685</updated>
+    </task>
+    <task id="LOCAL-00010" summary="第四章代码更新">
+      <created>1618837141150</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1618837141150</updated>
+    </task>
+    <task id="LOCAL-00011" summary="ThreadLocal的使用">
+      <created>1618992840219</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1618992840219</updated>
+    </task>
+    <task id="LOCAL-00012" summary="简单的数据库连接池示例">
+      <created>1618996962639</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1618996962639</updated>
+    </task>
+    <task id="LOCAL-00013" summary="线程应用实例">
+      <created>1619007836130</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1619007836130</updated>
+    </task>
+    <task id="LOCAL-00014" summary="代码">
+      <created>1619161525602</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1619161525602</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,11 +286,20 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="该代码实现了基于CAS线程安全的计数器方法" />
     <MESSAGE value="重排序对多线程的影响" />
     <MESSAGE value="锁内存语义的实现" />
     <MESSAGE value="2021年4月12日晚更新" />
     <MESSAGE value="引起死锁的示例代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="引起死锁的示例代码" />
+    <MESSAGE value="Java线程状态" />
+    <MESSAGE value="Daemon线程" />
+    <MESSAGE value="更新了代码" />
+    <MESSAGE value="第四章代码更新" />
+    <MESSAGE value="ThreadLocal的使用" />
+    <MESSAGE value="简单的数据库连接池示例" />
+    <MESSAGE value="线程应用实例" />
+    <MESSAGE value="代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="代码" />
   </component>
 </project>
