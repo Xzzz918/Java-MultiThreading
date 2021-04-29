@@ -13,6 +13,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * 修饰static方法是对.class对象加锁，
  * 修饰成员方法是对当前类的某个对象加锁，
  * 修饰代码块是对特定对象加锁。
+ * 因此测试
  */
 public class DeadLockDemo {
 
