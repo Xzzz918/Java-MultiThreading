@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="00fdd452-418a-45c5-89e5-9a9165b380dd" name="默认变更列表" comment="Daemon线程">
-      <change afterPath="$PROJECT_DIR$/Class04/等待通知机制与Condition接口.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Condition/BoundedQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Condition/ConditionUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/WaitNotifyMac/SleepUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/WaitNotifyMac/WaitNotify.java" afterDir="false" />
+    <list default="true" id="00fdd452-418a-45c5-89e5-9a9165b380dd" name="默认变更列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaMultiThread/FinalReferenceEscapeExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaMultiThread/FinalReferenceEscapeExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WaitNotify.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,17 +109,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="应用程序.WaitNotify (1)" />
@@ -166,6 +148,9 @@
       <workItem from="1619011960373" duration="622000" />
       <workItem from="1619161373291" duration="3706000" />
       <workItem from="1619176785651" duration="97000" />
+      <workItem from="1619683059050" duration="224000" />
+      <workItem from="1619683321504" duration="564000" />
+      <workItem from="1619686563978" duration="402000" />
     </task>
     <task id="LOCAL-00001" summary="该代码实现了基于CAS线程安全的计数器方法">
       <created>1618056322847</created>
@@ -265,7 +250,21 @@
       <option name="project" value="LOCAL" />
       <updated>1619161525602</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Daemon线程">
+      <created>1619683260038</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1619683260038</updated>
+    </task>
+    <task id="LOCAL-00016" summary="测试目录">
+      <created>1619686608920</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1619686608920</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -291,13 +290,14 @@
     <MESSAGE value="2021年4月12日晚更新" />
     <MESSAGE value="引起死锁的示例代码" />
     <MESSAGE value="Java线程状态" />
-    <MESSAGE value="Daemon线程" />
     <MESSAGE value="更新了代码" />
     <MESSAGE value="第四章代码更新" />
     <MESSAGE value="ThreadLocal的使用" />
     <MESSAGE value="简单的数据库连接池示例" />
     <MESSAGE value="线程应用实例" />
     <MESSAGE value="代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="代码" />
+    <MESSAGE value="Daemon线程" />
+    <MESSAGE value="测试目录" />
+    <option name="LAST_COMMIT_MESSAGE" value="测试目录" />
   </component>
 </project>
