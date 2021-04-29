@@ -2,9 +2,13 @@
 
 今天讲一下等待/通知机制和Condition接口，其中，后者相当于前者的一种实现方式。
 
+[等待/通知机制](## 1、等待/通知机制)
+
+
+
 ------
 
-## 等待/通知机制
+## 1、等待/通知机制
 
 等待/通知机制是Java内置机制，是任意Java对象都具备的，因为相关方法都定义在Object类上，如图所示
 
@@ -97,7 +101,7 @@ Thread[WaitThread,5,main] flag is false.running @ 15:12:31
 
 > WaitThread线程首先获取了lock的锁，然后调用其wait()方法，同时释放了lock的锁并进入了对象的等待队列中，进入WAITING状态。由于WaitThread释放了锁，因此NotifyThread随后获取了对象的锁，并调用其notify()方法，将WaitThread线程从**等待队列移入同步队列**，此时WaitThread的状态变为BLOCKED状态。在该线程之后释放lock锁后，WaitThread将有机会再次获取lock锁，并从wait()方法返回继续执行剩余操作。
 
-## 等待/通知的经典范式
+## 2、等待/通知的经典范式
 
 等待方相当于消费者，通知方相当于生产者，等待方遵循以下原则：
 
@@ -111,7 +115,7 @@ Thread[WaitThread,5,main] flag is false.running @ 15:12:31
 2. 改变条件。
 3. 通知等待在对象上的线程。
 
-## Condition接口
+## 3、Condition接口
 
 前面说过，由于等待/通知相关方法都定义在Object类上，因此任意一个Java对象都拥有一组监视器方法，这些方法与synchronized同步关键字配合实现等待/通知模式。而另一实现等待/通知模式的方法是**Condition接口提供的类似Object的监视器方法与Lock配合**。
 
@@ -121,7 +125,7 @@ Thread[WaitThread,5,main] flag is false.running @ 15:12:31
 
 特别注意的区别是前置条件中，condition对象是调用Lock对象的newCondition()方法创建出来的，此外，Condition接口的等待队列有多个，而Object监视器只有一个，而且，Condition接口实现的情景相对较多。
 
-### Condition接口与示例
+### 3.1 Condition接口与示例
 
 Condition的使用方式需要注意在调用方法前获取锁（与之前的Object监视器方法一致），示例代码如下：
 
@@ -214,9 +218,9 @@ public class BoundedQueue<T> {
 }
 ```
 
-### Condition的实现分析
+### 3.2 Condition的实现分析
 
-#### 等待队列
+#### 3.2.1 等待队列
 
 一个Condition包含一个等待队列，相比之下，在Object的监视器模型上，一个对象拥有一个同步队列和一个等待队列。而并发包中的Lock（更确切的说是同步器）拥有一个同步队列和**多个等待队列**，其对应关系如下图所示。
 
@@ -224,10 +228,10 @@ public class BoundedQueue<T> {
 
 如图所示，每个Condition的头指针指向同步器，每一个等待队列都对应着一个Condition。
 
-#### 等待
+#### 3.2.2 等待
 
 从队列的角度看await()方法，当调用await()方法时，相当于同步队列的首节点（获取了锁的节点）移动到了Condition的等待队列中。注意，这里同步队列的首节点并非直接加入等待队列，而是通过addConditionWaiter()方法**把当前线程构造成一个新的节点并将其加入等待队列中**。
 
-#### 通知
+#### 3.2.3 通知
 
 调用Condition的signal()方法，将会唤醒在等待队列中等待时间最长的节点（首节点），在唤醒节点之前，会将节点移动到同步队列中。
